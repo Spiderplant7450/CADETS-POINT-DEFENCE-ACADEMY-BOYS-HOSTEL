@@ -10,9 +10,9 @@ export const HeroSunriseBackground: React.FC = () => {
 
       {!imgError ? (
         <picture className="absolute inset-0 w-full h-full block">
-          <source type="image/webp" srcSet="/images/hero-bg.webp" />
+          <source type="image/webp" srcSet={`${import.meta.env.BASE_URL}images/hero-bg.webp`} />
           <img
-            src="/images/desktop-bg.jpg"
+            src={`${import.meta.env.BASE_URL}images/desktop-bg.jpg`}
             alt="Cadets Point Defence Academy Boys Hostel building in sunrise morning light"
             onError={() => setImgError(true)}
             className="w-full h-full object-cover object-[15%_top] sm:object-[20%_top] md:object-[22%_top] lg:object-left"

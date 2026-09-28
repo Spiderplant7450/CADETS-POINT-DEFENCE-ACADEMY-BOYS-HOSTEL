@@ -3,9 +3,11 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+export default defineConfig(({ mode }) => {
+  // If building for GitHub Pages repository or specified via GITHUB_PAGES / VITE_BASE_PATH
+  const basePath = process.env.VITE_BASE_PATH || (process.env.GITHUB_ACTIONS ? './' : '/');
   return {
-    base: './',
+    base: basePath,
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

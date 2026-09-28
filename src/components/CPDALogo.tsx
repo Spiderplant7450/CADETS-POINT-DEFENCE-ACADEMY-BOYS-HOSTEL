@@ -20,9 +20,9 @@ export const CPDALogo: React.FC<CPDALogoProps> = ({ className = '', size = 180 }
         className={`relative inline-flex items-center justify-center shrink-0 rounded-full select-none ${className}`}
       >
         <picture className="w-full h-full block">
-          <source type="image/webp" srcSet="/images/cpda-logo.webp" />
+          <source type="image/webp" srcSet={`${import.meta.env.BASE_URL}images/cpda-logo.webp`} />
           <img
-            src="/images/cpda-logo.jpg"
+            src={`${import.meta.env.BASE_URL}images/cpda-logo.jpg`}
             alt="Cadets Point Defence Academy Boys Hostel Logo"
             className="w-full h-full object-contain rounded-full drop-shadow-xl"
             onError={() => setImageError(true)}
