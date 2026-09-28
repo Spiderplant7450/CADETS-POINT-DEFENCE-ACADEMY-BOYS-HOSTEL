@@ -1,0 +1,2 @@
+# GitHub Pages .nojekyll
+# Prevents Jekyll processing so Vite asset folders starting with underscores or standard paths are served intact.

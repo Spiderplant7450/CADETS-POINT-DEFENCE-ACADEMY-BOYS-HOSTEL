@@ -1,0 +1,6 @@
+{
+  "name": "Cadets Point Defence Academy Boys Hostel",
+  "description": "Official website for Cadets Point Defence Academy Boys Hostel in Allahpur, Prayagraj. Building Future Defence Officers. Safe, secure, disciplined and supportive hostel accommodation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
